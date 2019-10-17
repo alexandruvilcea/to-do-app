@@ -1,0 +1,98 @@
+/* ---------------------------------------------------
+    HEADER STYLE
+----------------------------------------------------- */
+.addTodoInput, .searchTodoInput {
+    background-color: #2b60ea;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.addTodoInput input, .addTodoInput input:focus,
+.searchTodoInput input, .searchTodoInput input:focus{
+    color: white;
+    background: rgba(255,255,255,0.2);
+    border: none;
+}
+
+.addTodoInput input::-webkit-input-placeholder{ /* WebKit browsers */
+    color:    #FFF;
+}
+.addTodoInput input:-moz-placeholder{ /* WebKit browsers */
+    color:    #FFF;
+}
+.addTodoInput input::-moz-placeholder{ /* WebKit browsers */
+    color:    #FFF;
+}
+.addTodoInput input:-ms-input-placeholder{ /* WebKit browsers */
+    color:    #FFF;
+}
+
+.searchTodoInput input::-webkit-input-placeholder{ /* WebKit browsers */
+    color:    #FFF;
+}
+.searchTodoInput input:-moz-placeholder{ /* WebKit browsers */
+    color:    #FFF;
+}
+.searchTodoInput input::-moz-placeholder{ /* WebKit browsers */
+    color:    #FFF;
+}
+.searchTodoInput input:-ms-input-placeholder{ /* WebKit browsers */
+    color:    #FFF;
+}
+
+.headerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+}
+
+.card {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.10);
+}
+
+.completeButton {
+    color: #38c624;
+}
+
+.editButton {
+    color: #ffaa00;
+}
+
+.deleteButton {
+    color: #cd2a32;
+}
+
+.todo-list-completed .border {
+    border-left: 5px solid #38c624 !important;
+}
+
+.todo-list-completed .card {
+    opacity: 0.5;
+}
+
+.todo-list .border {
+    border-left: 5px solid #597eaa !important;
+}
+
+.formEdit {
+    display: none;
+}
+
+.todo-list:empty:after {
+    content: 'You have nothing to-do!.';
+}
+
+.todo-list-completed:empty:after {
+    content: 'You have yet to complete any tasks.';
+}
+
+.todo-list:after, 
+.todo-list-completed:after {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+}

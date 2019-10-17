@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#343a40">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/config.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+        <title>Todo app mobile</title>
+    </head>
+    <body>
+
+        <div data-role="page">
+            <div data-role="header" class="active justify-content-between px-3">
+                <div class="headerButton" id="showSearchTodo">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h5>To do app</h5>
+                <div class="headerButton" id="showAddTodo">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
+            <div data-role="main" class="plus-header">
+                <div class="addTodoInput py-3 mb-3 d-none">
+                    <div class="container">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="newTodo" placeholder="Add new to do">
+                            <div class="input-group-append">
+                                <button type="button" id="addTodo" class="btn btn-primary ml-auto"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchTodoInput py-3 mb-3 d-none">
+                    <div class="container">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="searchInput" placeholder="Search...">
+                        </div>
+                    </div>
+                </div>
+                <div class="container  mt-4" id="todoList">
+                    <div id="todo-list" class="todo-list"></div>
+                    <hr>
+                    <div id="todo-list-completed" class="todo-list-completed"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
